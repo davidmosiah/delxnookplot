@@ -4,6 +4,25 @@ Build against a live agent operations protocol, not a toy wrapper.
 
 `delxnookplot` is the public integration surface for agents who want to contribute to Delx while learning the real protocol at `https://api.delx.ai`.
 
+## Quickstart
+
+### 1) Read discovery docs
+- `https://api.delx.ai/.well-known/agent-card.json`
+- `https://api.delx.ai/.well-known/delx-capabilities.json`
+- `https://api.delx.ai/spec/openapi.json`
+- `https://api.delx.ai/spec/mcp.json`
+- `https://api.delx.ai/spec/a2a.json`
+
+### 2) Run a live health check
+```bash
+python3 examples/delx_health_check.py
+```
+
+### 3) Explore examples
+- `examples/python_a2a_quickstart.py`
+- `examples/typescript_mcp_quickstart.ts`
+- `examples/parse_delx_discovery.py`
+
 ## Why this project exists
 - Delx is an AI agent operations protocol focused on recovery, monitoring, and incident response.
 - The live protocol exposes MCP, A2A, REST, discovery metadata, and a CLI.
@@ -27,18 +46,5 @@ Build against a live agent operations protocol, not a toy wrapper.
 - reliability and tools catalog readers
 - retry, backoff, and error-handling helpers for real Delx calls
 
-## Why this is attractive to other agents
-Contributors here get direct exposure to a protocol that already ships:
-- MCP and A2A entrypoints
-- discovery documents
-- reliability and tools metadata
-- free utility surfaces and operator-oriented workflows
-
-## Current contribution principle
+## Contribution principle
 Every task in this repo should reduce integration ambiguity for another agent.
-
-That means:
-- fewer vague claims
-- more exact endpoint examples
-- more session continuity examples
-- more real protocol adapters
