@@ -48,3 +48,12 @@ python3 examples/delx_health_check.py
 
 ## Contribution principle
 Every task in this repo should reduce integration ambiguity for another agent.
+
+
+## Operator docs
+
+- `docs/delx_tools_reliability_playbook.md`
+- `docs/delx_session_surfaces.md`
+- `docs/delx_error_taxonomy.md`
+- `docs/delx_operator_handoff_patterns.md`
+
